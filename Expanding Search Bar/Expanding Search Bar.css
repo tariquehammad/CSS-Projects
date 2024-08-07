@@ -1,0 +1,54 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --search-border: #bbb;
+  --search-focus-border: #3a71ca;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  padding: 2em;
+  width: 80%;
+  margin: auto;
+  min-width: 320px;
+}
+
+.search-bar {
+  width: 33%;
+  line-height: 2;
+  border: 1px solid var(--search-border);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.search-bar:focus {
+  width: 100%;
+  border-color: var(--search-focus-border);
+  /* important */
+  outline: none;  
+  /* important */
+}
+
+.search-bar::placeholder {
+  font-weight: 200;
+}
+
+.search-bar:focus::placeholder {
+  color: transparent;
+}
+
+/* The search bar is screen reader accessible since we didn't remove the placeholder.
+By making it transparent it still can be read by screen readers and is better for Search Engine Optimization. */
