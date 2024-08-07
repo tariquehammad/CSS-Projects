@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.square {
+  height: 1.5em;
+  width: 1.5em;
+  margin: .5em;
+  animation: roll infinite 1.5s;
+}
+
+.square1 {
+  background-color: red;
+}
+
+.square2 {
+  background-color: orange;
+}
+
+.square3 {
+  background-color: blue;
+}
+
+
+@keyframes roll {
+  from {
+    transform: rotate(-45deg);
+  }
+
+  to {
+    transform: rotate(45deg);
+  }
+}
+
