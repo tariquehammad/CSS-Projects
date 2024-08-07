@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ced0e2;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  height: var(--card-height);
+  width: calc(var(--card-height)*2/3);
+  border: 2px solid black;
+  border-radius: 5px;
+  display: grid;
+  padding: .5em;
+  background: white;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+}
+
+.bottom {
+  transform: rotate(180deg);
+}
