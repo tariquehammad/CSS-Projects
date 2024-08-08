@@ -4,4 +4,5 @@ This repository contains small css projects like loading animations, tiles, coun
 
 <hr>
 
-<em>I made these for practice by taking some help from a YT video.</em>
+I made these for practice by taking some help from a YT video.
+
