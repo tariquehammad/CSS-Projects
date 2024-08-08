@@ -1,0 +1,49 @@
+:root {
+  --spoiler-color: #000000;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+}
+
+.post {
+  height: 100%;
+  width: 100%;
+  background: #e8eaed;
+  border-radius: 1em;
+  padding: 1em;
+  margin: 0 0 1em 0;
+}
+
+.spoiler {
+  background: var(--spoiler-color);
+  color: var(--spoiler-color);
+  transition: all 1s ease-in;
+}
+
+.spoiler:hover {
+  /* animation: reveal 1.5s;
+  cursor: pointer; */
+  background: initial;
+  color: initial;
+  cursor: pointer;
+}
+
+/* @keyframes reveal {
+  from {
+
+  }
+
+  to {
+    background: transparent;
+  }
+} */
